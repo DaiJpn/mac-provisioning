@@ -36,7 +36,6 @@
       - htop-osx
       - hub
       - jq
-      - kindle
       - nkf
       - npm
       - nvm
@@ -76,6 +75,7 @@
       - iterm2
       - java7
       - karabiner
+      - kindle
       - kobito
       - macvim
       - shiftit
