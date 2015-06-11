@@ -1,0 +1,85 @@
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  sudo: no
+  roles:
+    - homebrew
+    - homebrew-cask
+  vars:
+    # Tap external Homebrew repositories.
+    #
+    # e.g.
+    # - homebrew/binary
+    homebrew_repositories:
+
+    # Managed Homebrew packages.
+    #
+    # e.g.
+    # - package_name
+    # or
+    # { name: package_name, state: package_state, install_options: [with-baz, enable-debug] }
+    #
+    # state choices: [head, latest, present, absent, linked, unlinked] (default: latest)
+    # install_options: string or sequence (default: none)
+    homebrew_packages:
+      - readline
+      - openssl
+      - { name: openssl, state: linked, install_options: force }
+      - ansible
+      - cmake
+      - curl
+      - gibo
+      - name: git
+        install_options:
+          - with-brewed-curl
+          - with-gettext
+      - htop-osx
+      - hub
+      - jq
+      - kindle
+      - nkf
+      - npm
+      - nvm
+      - rbenv
+      - ruby-build
+      - the_silver_searcher
+      - tig
+      - tmux
+      - { name: vim, install_options: with-lua}
+      - wget
+      - zsh
+      - zsh-completions
+      - zsh-syntax-highlighting
+
+    # Tap external Homebrew Cask repositories.
+    homebrew_cask_repositories:
+      - caskroom/versions
+
+    # Managed Homebrew Cask packages.
+    #
+    # e.g.
+    # - package_name
+    # or
+    # { name: package_name, state: package_state }
+    #
+    # state choices: [present, absent, installed, uninstalled] (default: present)
+    homebrew_cask_packages:
+      - caffeine
+      - cheatsheet
+      - dash
+      - dropbox
+      - firefox-ja
+      - flashlight
+      - google-chrome
+      - google-japanese-ime
+      - hyperswitch
+      - iterm2
+      - java7
+      - karabiner
+      - kobito
+      - macvim
+      - shiftit
+      - skitch
+      - skype
+      - vagrant
+      - virtualbox
