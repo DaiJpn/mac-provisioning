@@ -26,25 +26,29 @@
       - openssl
       - { name: openssl, state: linked, install_options: force }
       - ansible
+      - boot2docker
       - cmake
       - curl
+      - docker
       - gibo
       - name: git
         install_options:
           - with-brewed-curl
           - with-gettext
+      - go
       - htop-osx
       - hub
       - jq
       - nkf
       - npm
       - nvm
+      - peco
       - rbenv
       - ruby-build
       - the_silver_searcher
       - tig
       - tmux
-      - { name: vim, install_options: with-lua}
+      - { name: vim, install_options: with-lua }
       - wget
       - zsh
       - zsh-completions
@@ -69,6 +73,7 @@
       - dropbox
       - firefox-ja
       - flashlight
+      - fluid
       - google-chrome
       - google-japanese-ime
       - hyperswitch
@@ -81,5 +86,6 @@
       - shiftit
       - skitch
       - skype
+      - thunderbird-ja
       - vagrant
       - virtualbox
