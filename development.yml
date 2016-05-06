@@ -36,12 +36,14 @@
           - with-brewed-curl
           - with-gettext
       - go
+      - gradle
       - htop-osx
       - hub
+      - jenv
       - jq
+      - maven
+      - mysql
       - nkf
-      - npm
-      - nvm
       - peco
       - rbenv
       - ruby-build
@@ -71,6 +73,7 @@
       - cheatsheet
       - dash
       - dropbox
+      - eclipse-java
       - firefox-ja
       - flashlight
       - fluid
@@ -79,6 +82,7 @@
       - hyperswitch
       - iterm2
       - java7
+      - java
       - karabiner
       - kindle
       - kobito
